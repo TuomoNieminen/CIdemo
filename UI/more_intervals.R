@@ -47,6 +47,6 @@ div(class="ci-tab-panel",
       You'll need the logical operators in R."),
     # R playground
     
-    get_playGround(3, "`my_sample`, `more_samples`, `zCI` and ´tCI` are available")
+    get_playGround(3, "my_sample, more_samples, zCI and tCI are available")
     
 )
