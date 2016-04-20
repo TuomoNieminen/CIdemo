@@ -1,7 +1,4 @@
 
-library(plotrix)
-library(shiny)
-
 shinyServer(function(input, output, session) {
   
   source("functions.R", local=T)$value
