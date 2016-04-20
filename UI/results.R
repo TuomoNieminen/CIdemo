@@ -33,6 +33,6 @@ p("Click to see how often our two different
     
     p(""),
     
-    get_playGround(4,"`my_sample`, `more_samples`, `zCI` and ´tCI` are available")
+    get_playGround(4,"my_sample, more_samples, zCI and tCI are available")
     
     )
