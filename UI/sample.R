@@ -21,7 +21,7 @@ conditionalPanel(condition="input.show_theoretical",
 ),
     
     p("Your choice prompts the following R code:"),
-    pre("my_sample <- rnorm(n=input$n, mean=input$mean, sd=input$sd)"),
+    pre("my_sample <- rnorm(n=input_n, mean=input_mean, sd=input_sd)"),
     
     p("which draws samples from the normal distribution. 
            You can inspect your sample by clicking on 'Show samples' below."),
@@ -46,14 +46,17 @@ conditionalPanel(condition="input.show_theoretical",
     ),
     br(),
     
-    p("Next, we'll use two techniques to compute a 95% confidence interval for the estimate of the population mean. 
-           How would you do it? Try to come up with a formula for the estimate and a confidence interval. 
-           A 95% confidence interval is an interval that on average contains the true 
-           parameter value 95% of the time."),
-    p("Experiment with R below. You have access to the object `my_sample`."),
+    p("Next, we'll use two techniques to compute 
+a 95% confidence interval for the estimate of the population mean. 
+A confidence interval is based on the idea that the sample we observe is random 
+      and thus any estimate calculated from it will vary from sample to sample. 
+      A 95% confidence interval is an interval which 
+      would include the true parameter value 95% of the time if the sampling were repeated."),
+    p("How would you calculate it? Try to come up with a formula for the estimate and a confidence interval. 
+      You can experiment with R below. You have access to the object `my_sample`."),
     
     # R playground
     
-    get_playGround(1,"`my_sample` is available")
+    get_playGround(1,"my_sample is available")
     
 )

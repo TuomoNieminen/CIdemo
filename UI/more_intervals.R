@@ -11,7 +11,7 @@ div(class="ci-tab-panel",
     numericInput("N",label="How many times do you wish to repeat the sampling?",
                  min = 1,value = 1000, step = 10),
     p("Your choice prompts the following R code:"),
-    pre("more_samples <- sapply(1:input$N, function(i) rnorm(input$n, input$mean, input$sd))"),
+    pre("more_samples <- sapply(1:input_N, function(i) rnorm(n=input_n, mean=input_mean, sd=input_sd))"),
     
     checkboxInput("more_intervals", label="Show more confidence intervals"),
     
