@@ -84,7 +84,7 @@ shinyServer(function(input, output, session) {
     d$t_CI <- apply(d$more_samples, 2, compute_ci, n=d$n ,type="t", truevalue=d$mu)
     
     d$zCI <- data.frame(round(t(d$z_CI),2))
-    d$tCI <- data.frame(round(t(d$z_CI),2))
+    d$tCI <- data.frame(round(t(d$t_CI),2))
     
     d$z_contains_true <- contains_true(d$mu, d$z_CI[4:5,])
     d$z_prc_inside <- round(100*sum(d$z_contains_true)/d$N,1)
