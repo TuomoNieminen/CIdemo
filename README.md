@@ -12,5 +12,5 @@ if(!require(shiny)){
   install.packages("shiny")
   library(shiny)
 }
-runGitHub("Calculator","TuomoNieminen")
+runGitHub("CIdemo","TuomoNieminen")
 ```
