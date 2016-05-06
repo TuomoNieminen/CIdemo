@@ -5,6 +5,7 @@ div(class="ci-tab-panel",
     br(),
     p("In this tutorial we'll experiment with confidence intervals. 
       To start things off we'll need some samples. Start by choosing a sample size, a mean and a standard deviation."),
+    br(),
     fluidRow(
       column(3,
     numericInput("n", label = "Number of samples",
@@ -23,15 +24,12 @@ conditionalPanel(condition="input.show_theoretical",
     p("Your choice prompts the following R code:"),
     pre("my_sample <- rnorm(n=input_n, mean=input_mean, sd=input_sd)"),
     
-    p("which draws samples from the normal distribution. 
-           You can inspect your sample by clicking on 'Show samples' below."),
+    p("which draws samples from the normal distribution."),
+br(),
     
     checkboxInput("show_samples", label="Show samples"),
     br(),
     conditionalPanel(condition="input.show_samples",
-                     
-                     p("You can control how many values of your sample you wish to see 
-                            and the (approximate) number of breaks in the histrogram of the sample."),
                      
                      fluidRow(
                        column(4,
@@ -54,9 +52,12 @@ A confidence interval is based on the idea that the sample we observe is random
       would include the true parameter value 95% of the time if the sampling were repeated."),
     p("How would you calculate it? Try to come up with a formula for the estimate and a confidence interval. 
       You can experiment with R below. You have access to the object `my_sample`."),
+hr(),
     
     # R playground
     
-    get_playGround(1,"my_sample is available")
+      div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
+        get_playGround(1,"my_sample is available")
+          )
     
 )

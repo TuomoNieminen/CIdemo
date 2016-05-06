@@ -51,9 +51,12 @@ then future similarily calculated intervals would contain the true parameter val
       we should be able to somehow test how often our intervals actually contain it. 
      Can you think of a way to test if the promise of the confidence intervals holds?"), 
       p("You can again experiment with R below."),
+    hr(),
     
     # R playground
     
+    div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
     get_playGround(2, "my_sample is available")
+    )
     
 )

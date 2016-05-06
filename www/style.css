@@ -10,3 +10,9 @@
 .ci-t {
   background-color:#F6F0FF;
 }
+
+.intro-playground {
+  padding:15px; 
+  background-color:#F5F5FF; 
+  border-radius:10px;
+}

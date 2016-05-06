@@ -45,7 +45,10 @@ p("In practise it is unlikely to find a situation where you would know the popul
   p("A t interval is a good choice whenever the sampling ditribution of the parameter of 
   interest is approximately normal. This is the case whenever the sample size is reasonably large, 
   and it is also always the case if the underlying population distribution is normal."),
-    
+hr(),
+
+div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
     get_playGround(4,"my_sample, more_samples, zCI and tCI are available")
+)
     
     )

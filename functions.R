@@ -25,7 +25,8 @@ contains_true <- function(truevalue, CI) {
 
 get_playGround <- function(i, rtext="write any (R) code here") {
   div(class="intro-playground",
-      hr(),
+      
+      h4("R playground"),br(),
       
       # code input
       div(tags$textarea(id=paste0("code",i),

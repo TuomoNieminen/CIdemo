@@ -45,8 +45,12 @@ div(class="ci-tab-panel",
     
     p("Can you think of a way to check if a single confidence interval contains the true parameter value? 
       You'll need the logical operators in R."),
+    hr(),
+    
     # R playground
     
+    div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
     get_playGround(3, "my_sample, more_samples, zCI and tCI are available")
+    )
     
 )
