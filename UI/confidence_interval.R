@@ -55,8 +55,6 @@ then future similarily calculated intervals would contain the true parameter val
     
     # R playground
     
-    div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
     get_playGround(2, "my_sample is available")
-    )
     
 )
