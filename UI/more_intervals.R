@@ -49,8 +49,6 @@ div(class="ci-tab-panel",
     
     # R playground
     
-    div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
     get_playGround(3, "my_sample, more_samples, zCI and tCI are available")
-    )
     
 )
