@@ -5,6 +5,9 @@ library(shiny)
 shinyUI(fluidPage(
   includeCSS("www/style.css"),
   
+  # wrapper
+  div(class = "wrapper,
+  
   tabsetPanel(id="nav", #widths=c(2,10),
               tabPanel("sample",value=1,
                        source("UI/sample.R", local=T)$value
@@ -33,6 +36,7 @@ shinyUI(fluidPage(
                         icon=icon("arrow-circle-right "))),
     column(3)
   ),
-  br(),br()
+  br(),br(),
+)
   
 ))
