@@ -36,7 +36,7 @@ shinyUI(fluidPage(
                         icon=icon("arrow-circle-right "))),
     column(3)
   ),
-  br(),br(),
+  br(),br()
 )
   
 ))
