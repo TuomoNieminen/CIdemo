@@ -3,7 +3,7 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  includeCSS("style.css"),
+  includeCSS("www/style.css"),
   
   tabsetPanel(id="nav", #widths=c(2,10),
               tabPanel("sample",value=1,
