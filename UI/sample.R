@@ -56,8 +56,6 @@ hr(),
     
     # R playground
     
-      div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
         get_playGround(1,"my_sample is available")
-          )
     
 )
