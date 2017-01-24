@@ -47,8 +47,6 @@ p("In practise it is unlikely to find a situation where you would know the popul
   and it is also always the case if the underlying population distribution is normal."),
 hr(),
 
-div(style="padding:20px; background-color:#F6F0FF; border-radius:10px;",
     get_playGround(4,"my_sample, more_samples, zCI and tCI are available")
-)
     
     )
