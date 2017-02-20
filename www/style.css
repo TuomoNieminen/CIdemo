@@ -18,11 +18,11 @@
 
 p {
   padding: 15px; 
-  background-color: #F8FAFB; 
+  background-color:#F5F5FF;
   border-radius: 10px;
 }
 
 .wrapper {
- max-width: 80%;
+ max-width: 85%;
  margin: 0 auto;
 }

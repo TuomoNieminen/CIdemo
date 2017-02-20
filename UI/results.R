@@ -4,10 +4,8 @@ div(class="ci-tab-panel",
     br(),
     p("The confidence intervals calculated from repeated sampling 
 are based on a promise that they contain the true parameter value a (chosen) high 
-      percentage of the time."),
+      percentage of the time. The following R code can be used to check if an interval contains a value:"),
     
-    p("The following R code can be used to check if an interval contains a value 
-      (you need to specify ci_lower and ci_upper):"),
     pre("input_mean >= ci_lower | input_mean <= ci_upper"),
 
 p("Click to see how often our two different 
@@ -41,8 +39,8 @@ then the difference between the z and t intervals should be small
       and they should both deliver their promise well."),
 
 p("In practise it is unlikely to find a situation where you would know the population standard 
-  deviation but not the mean. Therefore it is unlikely that you would want to use a z interval."),
-  p("A t interval is a good choice whenever the sampling ditribution of the parameter of 
+  deviation but not the mean. Therefore it is unlikely that you would want to use a z interval. 
+  A t interval is a good choice whenever the sampling ditribution of the parameter of 
   interest is approximately normal. This is the case whenever the sample size is reasonably large, 
   and it is also always the case if the underlying population distribution is normal."),
 hr(),

@@ -4,8 +4,8 @@ div(class="ci-tab-panel",
     br(),
     
     p("Next, we'll test if our confidence intervals deliver what they have promised by 
-      taking more samples and computing more confidence intervals."),
-    p("We'll draw more samples from the same distribution."),
+      taking more samples and computing more confidence intervals. 
+      We'll draw more samples from the same distribution."),
     br(),
     
     numericInput("N",label="How many times do you wish to repeat the sampling?",
