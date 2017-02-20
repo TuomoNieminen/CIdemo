@@ -1,4 +1,4 @@
-![](app.png)
+![](https://github.com/TuomoNieminen/CIdemo/blob/master/app.PNG)
 
 # Welcome to the CIdemo repository
 
