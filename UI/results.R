@@ -1,7 +1,7 @@
 div(class="ci-tab-panel",
-    br(),
+
     h3("Results of the experiment", align="center"),
-    br(),
+    
     p("The confidence intervals calculated from repeated sampling 
 are based on a promise that they contain the true parameter value a (chosen) high 
       percentage of the time. The following R code can be used to check if an interval contains a value:"),
@@ -30,6 +30,7 @@ p("Click to see how often our two different
                      htmlOutput("howmany_tci"),
                      plotOutput("t_mu_plot")),
     
+h3("Conclusions"),
     p("In this case we used a sample estimate for the standard deviation 
 when calculating the z confidence interval. 
 The z interval assumes knowledge of the population standard deviation so 

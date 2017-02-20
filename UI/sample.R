@@ -1,8 +1,6 @@
 div(class="ci-tab-panel",
     
-    br(),
-    h3("Sample", align="center"),
-    br(),
+    h3("Drawing a sample", align="center"), 
     p("In this tutorial we'll experiment with confidence intervals. 
       To start things off we'll need some samples. Start by choosing a sample size, a mean and a standard deviation."),
     br(),
@@ -20,11 +18,15 @@ div(class="ci-tab-panel",
     p("Your choice prompts the following R code, which draws samples from the normal distribution:"),
     pre("my_sample <- rnorm(n=input_n, mean=input_mean, sd=input_sd)"),
     
+    
     checkboxInput("show_theoretical", label="Show the theoretical distribution"),
     br(),
     conditionalPanel(condition="input.show_theoretical",
                      plotOutput("theoretical",width="70%")
     ),
+    
+    br(),
+    h3("Explore your sample"), 
     checkboxInput("show_samples", label="Show samples"),
     br(),
     conditionalPanel(condition="input.show_samples",
@@ -41,6 +43,8 @@ div(class="ci-tab-panel",
                        ))
     ),
     br(),
+    
+    h3("Up next"),
     
     p("Next, we'll use two techniques to compute 
 a 95% confidence interval for the estimate of the population mean. 

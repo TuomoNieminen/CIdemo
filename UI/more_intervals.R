@@ -1,8 +1,7 @@
 div(class="ci-tab-panel",
-    br(),
+
     h3("More intervals", align="center"),
-    br(),
-    
+
     p("Next, we'll test if our confidence intervals deliver what they have promised by 
       taking more samples and computing more confidence intervals. 
       We'll draw more samples from the same distribution."),
@@ -13,6 +12,7 @@ div(class="ci-tab-panel",
     p("Your choice prompts the following R code:"),
     pre("more_samples <- sapply(1:input_N, function(i) rnorm(n=input_n, mean=input_mean, sd=input_sd))"),
     
+    h3("Explore your confidence intervals"),
     checkboxInput("more_intervals", label="Show more confidence intervals"),
     
     conditionalPanel(condition="input.more_intervals",
@@ -39,6 +39,7 @@ div(class="ci-tab-panel",
     ),
     br(),
     
+    h3("Up next"),
     p("Okey so now we have a bunch of confidence intervals computed using the z and t techniques. 
       Now we should be able to see what percentage of them actually contains the true 
       parameter value."),

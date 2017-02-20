@@ -1,8 +1,8 @@
 div(class="ci-tab-panel",
-    br(),
-    h3("Confidence intervals for the mean", align="center"),
-    br(),
-    p("Next we'll estimate the population mean and use two techniques 
+
+    h3("Interval estimates for the mean", align="center"),
+
+    p("Next we'll estimate the population mean and then use two techniques 
         for computing a confidence interval for our estimate. 
         A 95% confidence interval makes a promise that such intervals calculated 
       from future samples have a 95% probability of containing the true parameter value."),
@@ -45,6 +45,9 @@ an unknown random variable (which it usually is).
                      )
     ),
     
+    br(),
+    
+    h3("Up next"),
     p("The promise of the confidence interval is that if we could take more samples, 
 then future similarily calculated intervals would contain the true parameter value 95% of the time. 
       Now that we know our true parameter value (we chose it for sampling), 
