@@ -3,25 +3,6 @@ shinyServer(function(input, output, session) {
   
   source("functions.R", local=T)$value
   
-  # navigation
-  
-  nav <- reactiveValues(val=1)
-  observe({
-    nav$val <- as.numeric(input$nav)
-  })
-  
-  observeEvent(input$cont, {
-    nav$val <- min(chapters, as.numeric(input$nav) + 1)
-  })
-  
-  observeEvent(input$prev, {
-    nav$val <-  max(1,as.numeric(input$nav) - 1)
-  })
-  
-  observe({
-    updateTabsetPanel(session, inputId="nav", 
-                      selected = paste(nav$val))
-  })
   # parameters and single sample statistics
   
   d <- reactiveValues(sample=NULL)
