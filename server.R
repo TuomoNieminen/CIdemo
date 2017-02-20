@@ -132,7 +132,7 @@ shinyServer(function(input, output, session) {
     N <- ifelse(is.null(N),10,N)
     col = c("red","grey10")[d$z_contains_true+1][1:N]
     CI <- d$z_CI[,1:N]
-    plotCI(x=1:N, y=CI[2,], 
+    plotrix::plotCI(x=1:N, y=CI[2,], 
            li = CI[4,], ui = CI[5,],
            pch=NA, col = col)
     abline(h=CI[1,1],col="green")
@@ -143,7 +143,7 @@ shinyServer(function(input, output, session) {
     N <- ifelse(is.null(N),10,N)
     col = c("red","grey10")[d$t_contains_true+1][1:N]
     CI <- d$t_CI[,1:N]
-    plotCI(x=1:N, y=CI[2,], 
+    plotrix::plotCI(x=1:N, y=CI[2,], 
            li = CI[4,], ui = CI[5,],
            pch=NA, col = col)
     abline(h=CI[1,1],col="green")
