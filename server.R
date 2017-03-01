@@ -153,16 +153,16 @@ shinyServer(function(input, output, session) {
       env$input_mean <- d$mu
       env$input_sd <- d$sd
       env$my_sample <- d$sample
-      if(nav$val>1) {
+      if(input$nav>1) {
         env$input_N <- d$N
         env$more_samples <- data.frame(d$more_samples)
       }
-      if(nav$val==3) {
+      if(input$nav==3) {
         env$zCI <- d$zCI
         env$tCI <- d$tCI
       }
       
-      output[[paste0(type,nav$val)]] <- switch(type,
+      output[[paste0(type,input$nav)]] <- switch(type,
                                                "plot" =  renderPlot({eval(code,
                                                                           envir=env)}),
                                                "text" =  renderPrint({eval(code,
