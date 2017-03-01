@@ -1,4 +1,4 @@
-![](https://github.com/TuomoNieminen/CIdemo/blob/master/app.PNG)
+![](https://github.com/TuomoNieminen/CIdemo/blob/master/www/app.PNG)
 
 # About  
 
