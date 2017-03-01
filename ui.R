@@ -4,11 +4,22 @@ library(shiny)
 
 shinyUI(fluidPage(
   includeCSS("www/style.css"),
+  
+  fluidPage(
+    list(tags$head(HTML('<link rel="icon", href="MyIcon.png", 
+                        type="image/png" />'))),
+    div(style="padding: 1px 0px; width: '100%'",
+        titlePanel(
+          title="", windowTitle="CI demo"
+        )
+    )),
         
         # wrapper
         div(class = "wrapper",
       
-      navbarPage(title = "CI demo", 
+      navbarPage(title = div(tags$a(img(id ="github", src = 'github.png'), 
+                                    href = "https://github.com/TuomoNieminen/CIdemo"), 
+                 " CI demo"), 
                  id="nav", position = "fixed-top",
                  
                  tabPanel("A Random Sample",value=1,
