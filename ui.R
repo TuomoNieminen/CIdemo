@@ -4,13 +4,11 @@ library(shiny)
 
 shinyUI(fluidPage(
   includeCSS("www/style.css"),
-  
+        
         # wrapper
         div(class = "wrapper",
       
-      navbarPage(title = div(tags$a(img(id ="github", src = 'github.PNG'),
-                                    href = "https://github.com/TuomoNieminen/CIdemo"),
-                             "  CI demo"), 
+      navbarPage(title = "CI demo", 
                  id="nav", position = "fixed-top",
                  
                  tabPanel("A Random Sample",value=1,
